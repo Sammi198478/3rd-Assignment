@@ -1,6 +1,7 @@
 import React from 'react'
 import Instant from './Instant';
 import Moreinfo from './Moreinfo';
+import Filter from './Filter';
 
 function BellaITalia() {
   return (
@@ -44,6 +45,7 @@ function BellaITalia() {
         </div>
         <Instant/>
         <Moreinfo/>
+        <Filter/>
     </section>
     </>
   )
