@@ -80,22 +80,24 @@ function Filter() {
   return (
     <>
     <section>
-        <div>
-            <div>
+        <div className='flex lg:flex-row sm:flex-cols-1 container mx-auto lg:w-[80%] mt-24 shadow-2xl gap-6 border'>
+            <div >
                 {Items.map((item, i)=>(
                     <div key={i}>
-                        <img src={item.img} alt="" />
+                        <img className='mb-3 flex items-start' src={item.img} alt="" />
                         <div>
-                            <h6>{item.title}</h6>
-                            <span>{item.Aria}</span>
-                            <img src={item.imgSrc} alt="" />
-                            <p>{item.para}</p>
+                            <h6 className='text-2xl font-bold text-[#232323]'>{item.title}</h6>
+                            <span className='mb-3'>{item.Aria}</span>
+                            <img className='mt-3 mb-3' src={item.imgSrc} alt="" />
+                            <p className='text-sm lg:w-[50%] mb-4'>{item.para}</p>
                         </div>
                     </div>
                     
                 ))}
             </div>
+            
         </div>
+        <button className='bg-primary text-white px-10 py-2 rounded-2xl flex justify-center items-center mt-16 mx-auto'>Show more reviews</button>
     </section>
     </>
   )
