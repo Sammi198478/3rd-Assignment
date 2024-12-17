@@ -2,13 +2,14 @@ import React from 'react'
 import Instant from './Instant';
 import Moreinfo from './Moreinfo';
 import Filter from './Filter';
+import DiscoverPage from './Discover';
 
 function BellaITalia() {
   return (
     <>
     <section  className='max-w-[1440px] lg:w-[90%] mx-auto'>
-    <p className='text-sm mx-auto flex justify-items-start lg:w-[50%] mt-10'>Home / BellaItalia</p>
-        <div  className='bg-[url("/bellaitalia.png")] lg:w-[900px] lg:h-[400px] bg-cover flex flex-col justify-center mx-auto mt-7 sm-w-[400px]'>
+    <p className='text-sm mx-auto flex justify-items-start mt-10 ml-12'>Home / BellaItalia</p>
+        <div  className='bg-[url("/bellaitalia.png")] lg:w-[900px] lg:h-[400px] bg-cover relative mx-auto mt-7 sm-w-[400px]'>
         
             <div className='flex flex-col justify-start items-start  text-[#FFFFFF]'>
                 <h1 className='w-[90%] text-2xl font-bold ml-14 mb-4'>Bella italia</h1>
@@ -18,7 +19,7 @@ function BellaITalia() {
                 <p className=' flex flex-row ml-14'><img className='w-4 h-4' src="/map.png" alt="" />Singapour, Bishan-Ang Mo Kio Park </p>
                 <p className=' flex flex-row ml-14'><img className='w-4 h-4' src="/clock.png" alt="" />7j/7, 08:00 - 22:00 </p>
             </div>
-            <img className='mx-auto mb-4 bottom-0' src="/bellaitalia5.png" alt="" />
+            <img className='mx-auto mb-4 absolute bottom-[-0] ml-80' src="/bellaitalia5.png" alt="" />
         </div>
 
         <div className='mt-24 '> 
@@ -46,6 +47,7 @@ function BellaITalia() {
         <Instant/>
         <Moreinfo/>
         <Filter/>
+        <DiscoverPage/>
     </section>
     </>
   )

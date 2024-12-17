@@ -1,10 +1,10 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom';
 
-function SecondaryNav() {
+function Nav2() {
 
     if(location.pathname === '/restaurants' ){return <Outlet/>};
-    if(location.pathname === '//bellaitalia'){return <Outlet/>};
+    
     const Items = [
         {
             img: "/Vector.png",
@@ -75,4 +75,4 @@ function SecondaryNav() {
   )
 }
 
-export default SecondaryNav;
+export default Nav2;

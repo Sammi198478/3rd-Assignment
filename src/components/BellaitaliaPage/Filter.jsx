@@ -80,7 +80,11 @@ function Filter() {
   return (
     <>
     <section>
-        <div className='flex lg:flex-row sm:flex-cols-1 container mx-auto lg:w-[80%] mt-24 shadow-2xl gap-6 border'>
+        <div className='flex flex-row gap-3 mt-16 mb-4 ml-24'>
+            <button className='border px-4 py-1 border-[#5E5E5E] rounded-2xl'>Filter</button>
+            <button className='bg-[#5E5E5E] text-white rounded-2xl border shadow-md px-4 py-1'>Sort</button>
+        </div>
+        <div className='flex lg:flex-row sm:flex-cols sm:justify-center sm:items-center container mx-auto lg:w-[80%] shadow-2xl gap-6 border'>
             <div >
                 {Items.map((item, i)=>(
                     <div key={i}>

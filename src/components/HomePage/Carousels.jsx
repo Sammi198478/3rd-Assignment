@@ -56,7 +56,7 @@ function Carousels() {
 
     return (
         <>
-            <section className='grid grid-rows-4 justify-between items-center'>
+            <section className='grid grid-rows-4 justify-between items-center max-w-[1440px]'>
                
                 <div className='w-full max-w-screen-2xl mx-auto'>
                     <div className='flex items-center justify-between'>

@@ -58,14 +58,13 @@ function Restaurants() {
                     <p className='text-sm mb-2 '>Home / All restaurants</p>
                     <div className='flex flex-row gap-7'>
                     <h1 className='text-2xl font-bold text-[#1E1E1E] mb-6'>best restaurants in singapore</h1>
-                    {location.pathname === '/restaurants' ? (
-                            <button onClick={()=> Navigate("/restaurants/bellaitalia")} className='border border-[#5E5E5E] rounded-3xl px-4 py-1'>
+                    
+                           <div>
+                           <button onClick={()=> Navigate("/bellaitalia")} className='border border-[#5E5E5E] rounded-2xl px-4 py-1'>
                                 Sort
                             </button>
-                        ) : (
-                            <button>Sort</button>
-                        )
-                    }
+                           </div>
+                        
                     </div>
                     <div className='flex flex-row justify-between'>
                     <div>

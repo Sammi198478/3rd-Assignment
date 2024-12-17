@@ -1,7 +1,7 @@
 import {Navbar, NavbarBrand, NavbarContent,  Input,  DropdownItem, DropdownTrigger, Dropdown, DropdownMenu,Avatar,
   } from "@nextui-org/react";
 import { NavLink, Outlet } from "react-router-dom";
-import SecondaryNav from "./secondaryNav";
+import Nav2 from "./HomePage/Nav2";
   
   
   
@@ -95,7 +95,7 @@ import SecondaryNav from "./secondaryNav";
         </NavbarContent>
       </Navbar>
      
-      <SecondaryNav/>
+      <Nav2/>
       <Outlet/>
       </>
     );
