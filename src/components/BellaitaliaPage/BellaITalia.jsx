@@ -1,12 +1,13 @@
 import React from 'react'
 import Instant from './Instant';
+import Moreinfo from './Moreinfo';
 
 function BellaITalia() {
   return (
     <>
-    <section  className='max-w-[1440px]'>
-    <p className='text-sm mx-auto flex justify-items-start w-[90%] mt-10'>Home / BellaItalia</p>
-        <div  className='bg-[url("/bellaitalia.png")] lg:w-[1000px] lg:h-[400px] bg-cover flex flex-col justify-center mx-auto mt-7 sm-w-[400px]'>
+    <section  className='max-w-[1440px] lg:w-[90%] mx-auto'>
+    <p className='text-sm mx-auto flex justify-items-start lg:w-[50%] mt-10'>Home / BellaItalia</p>
+        <div  className='bg-[url("/bellaitalia.png")] lg:w-[900px] lg:h-[400px] bg-cover flex flex-col justify-center mx-auto mt-7 sm-w-[400px]'>
         
             <div className='flex flex-col justify-start items-start  text-[#FFFFFF]'>
                 <h1 className='w-[90%] text-2xl font-bold ml-14 mb-4'>Bella italia</h1>
@@ -26,22 +27,23 @@ function BellaITalia() {
           </div>
           <div className='flex lg:flex-row sm:flex-cols-1 justify-center gap-3 ml-10'>
             <div>
-            <img className='rounded-xl h-[550px]' src="bellaitalia1.png" alt="" />
-            <button className='bg-white text-black border rounded-full'>View all photos (7)</button>
+            <img className='rounded-xl h-[500px]' src="/bellaitalia1.png" alt="" />
+           
             </div>
             
             
             <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-3 justify-center items-center '>
               
-              <img className='rounded-xl' src="bellaitalia6.png" alt="" />
-              <img className='rounded-xl' src="bellaitalia2.png" alt="" />
-              <img className='rounded-xl' src="bellaitalia3.png" alt="" />
-              <img className='rounded-xl' src="bellaitalia4.png" alt="" />
+              <img className='rounded-xl' src="/bellaitalia6.png" alt="" />
+              <img className='rounded-xl' src="/bellaitalia2.png" alt="" />
+              <img className='rounded-xl' src="/bellaitalia3.png" alt="" />
+              <img className='rounded-xl' src="/bellaitalia4.png" alt="" />
               
             </div>
           </div>
         </div>
         <Instant/>
+        <Moreinfo/>
     </section>
     </>
   )
