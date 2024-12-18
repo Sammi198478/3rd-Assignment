@@ -23,7 +23,7 @@ function Trends() {
      <h1 className='text-center lg:text-start text-[#1E1E1E] text-2xl lg:text-4xl font-bold mt-10 mb-8'>The latest trends
       </h1>
 
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-5 mb-10 container mx-auto p-4 gap-4 '>
+      <div className='grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-4 mt-5 mb-10 container mx-auto p-4 gap-4 '>
         {
           cards.map((card, index)=> (
             <div key={index} className='flex flex-col items-center overflow-hidden '>
